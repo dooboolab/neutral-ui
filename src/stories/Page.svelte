@@ -2,7 +2,7 @@
   import './page.css';
   import Header from './Header.svelte';
 
-  import { createEventDispatcher } from 'svelte';
+  import {createEventDispatcher} from 'svelte';
 
   export let user = null;
 

@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App 1`] = `
+Object {
+  "component": App {
+    "$$": Object {
+      "after_update": Array [],
+      "before_update": Array [],
+      "bound": Object {},
+      "callbacks": Object {},
+      "context": Map {},
+      "ctx": Array [
+        "Hello World!",
+      ],
+      "dirty": Array [
+        -1,
+      ],
+      "fragment": Object {
+        "c": [Function],
+        "d": [Function],
+        "i": [Function],
+        "l": [Function],
+        "m": [Function],
+        "o": [Function],
+        "p": [Function],
+      },
+      "not_equal": [Function],
+      "on_destroy": Array [
+        [Function],
+      ],
+      "on_disconnect": Array [],
+      "on_mount": Array [],
+      "props": Object {
+        "name": 0,
+      },
+      "root": <div>
+        <main
+          class="svelte-1tky8bj"
+        >
+          <h1
+            class="svelte-1tky8bj"
+          >
+            Hello World!
+          </h1>
+           
+          <p>
+            Visit the 
+            <a
+              href="https://svelte.dev/tutorial"
+            >
+              Svelte tutorial
+            </a>
+             to learn how to build Svelte apps.
+          </p>
+        </main>
+      </div>,
+      "skip_bound": false,
+      "update": [Function],
+    },
+    "$$set": [Function],
+    "$capture_state": [Function],
+    "$inject_state": [Function],
+  },
+  "container": <body>
+    <div>
+      <main
+        class="svelte-1tky8bj"
+      >
+        <h1
+          class="svelte-1tky8bj"
+        >
+          Hello World!
+        </h1>
+         
+        <p>
+          Visit the 
+          <a
+            href="https://svelte.dev/tutorial"
+          >
+            Svelte tutorial
+          </a>
+           to learn how to build Svelte apps.
+        </p>
+      </main>
+    </div>
+  </body>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

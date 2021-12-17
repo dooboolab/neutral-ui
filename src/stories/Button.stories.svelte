@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import {Meta, Template, Story} from "@storybook/addon-svelte-csf";
   import Button from "./Button.svelte";
 </script>
 
@@ -7,13 +7,13 @@
   title="Example/Button"
   component={Button}
   argTypes={{
-    label: { control: "text" },
-    primary: { control: "boolean" },
-    backgroundColor: { control: "color" },
+    label: {control: "text"},
+    primary: {control: "boolean"},
+    backgroundColor: {control: "color"},
     size: {
-      control: { type: "select", options: ["small", "medium", "large"] },
+      control: {type: "select", options: ["small", "medium", "large"]},
     },
-    onClick: { action: "onClick" },
+    onClick: {action: "onClick"},
   }}
 />
 

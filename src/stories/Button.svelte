@@ -1,6 +1,6 @@
 <script>
   import './button.css';
-  import { createEventDispatcher } from 'svelte';
+  import {createEventDispatcher} from 'svelte';
   /**
    * Is this the principal call to action on the page?
    */
@@ -21,6 +21,7 @@
 
   let mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
 
+  // eslint-disable-next-line
   let style = backgroundColor ? `background-color: ${backgroundColor}` : '';
 
   const dispatch = createEventDispatcher();

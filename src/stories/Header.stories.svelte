@@ -1,5 +1,5 @@
 <script>
-  import { Meta, Template, Story } from "@storybook/addon-svelte-csf";
+  import {Meta, Template, Story} from "@storybook/addon-svelte-csf";
   import Header from "./Header.svelte";
 </script>
 
@@ -7,9 +7,9 @@
   title="Example/Header"
   component={Header}
   argTypes={{
-    onLogin: { action: "onLogin" },
-    onLogout: { action: "onLogout" },
-    onCreateAccount: { action: "onCreateAccount" },
+    onLogin: {action: "onLogin"},
+    onLogout: {action: "onLogout"},
+    onCreateAccount: {action: "onCreateAccount"},
   }}
 />
 
