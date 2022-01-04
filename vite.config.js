@@ -6,6 +6,9 @@ const production = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   clearScreen: false,
+  build: {
+    outDir: './public',
+  },
   plugins: [
     svelte({
       emitCss: false,
