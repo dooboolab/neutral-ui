@@ -1,6 +1,7 @@
 /node_modules/
 /public/build/
 build
+dist
 
 .DS_Store
 build-storybook.log
