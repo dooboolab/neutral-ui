@@ -9,9 +9,7 @@ Object {
       "bound": Object {},
       "callbacks": Object {},
       "context": Map {},
-      "ctx": Array [
-        "Hello World!",
-      ],
+      "ctx": Array [],
       "dirty": Array [
         -1,
       ],
@@ -30,57 +28,32 @@ Object {
       ],
       "on_disconnect": Array [],
       "on_mount": Array [],
-      "props": Object {
-        "name": 0,
-      },
+      "props": Object {},
       "root": <div>
         <main
-          class="svelte-1tky8bj"
+          class="svelte-1pbldhu"
         >
           <h1
-            class="svelte-1tky8bj"
+            class="svelte-1pbldhu"
           >
-            Hello World!
+            dooboo-ui-svelte
           </h1>
-           
-          <p>
-            Visit the 
-            <a
-              href="https://svelte.dev/tutorial"
-            >
-              Svelte tutorial
-            </a>
-             to learn how to build Svelte apps.
-          </p>
         </main>
       </div>,
       "skip_bound": false,
       "update": [Function],
     },
-    "$$set": [Function],
-    "$capture_state": [Function],
-    "$inject_state": [Function],
   },
   "container": <body>
     <div>
       <main
-        class="svelte-1tky8bj"
+        class="svelte-1pbldhu"
       >
         <h1
-          class="svelte-1tky8bj"
+          class="svelte-1pbldhu"
         >
-          Hello World!
+          dooboo-ui-svelte
         </h1>
-         
-        <p>
-          Visit the 
-          <a
-            href="https://svelte.dev/tutorial"
-          >
-            Svelte tutorial
-          </a>
-           to learn how to build Svelte apps.
-        </p>
       </main>
     </div>
   </body>,
