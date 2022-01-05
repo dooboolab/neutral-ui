@@ -1,5 +1,3 @@
-import { ThemeProvider } from "svelte-theme";
-
 export const parameters = {
   backgrounds: {
     default: 'light',
