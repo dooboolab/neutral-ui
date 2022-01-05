@@ -12,5 +12,4 @@ module.exports = {
   svelteIndentScriptAndStyle: true,
   svelteSortOrder: "options-styles-scripts-markup",
   svelteAllowShorthand: false,
-  plugins: ["prettier-plugin-svelte"],
 };

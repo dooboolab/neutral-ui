@@ -1,18 +1,25 @@
 module.exports = {
   transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest",
-    '^.+\\.svelte$': 'svelte-jester',
+    '^.+\\.js$': 'babel-jest',
+    '^.+\\.svelte$': [
+      'svelte-jester',
+      {
+        preprocess: true,
+      },
+    ],
+    '^.+\\.ts$': 'ts-jest',
   },
-  moduleNameMapper: {"^.+\\.(css|less|scss)$": "babel-jest"},
-  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(js?|ts?|svelte?)$",
-  moduleFileExtensions: ["js", "ts", "svelte"],
-  modulePathIgnorePatterns: ["lib", "build"],
+  transformIgnorePatterns: ['/node_modules/(?!svelte-theme)'],
+  moduleNameMapper: {'^.+\\.(css|less|scss)$': 'babel-jest'},
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(js?|ts?|svelte?)$',
+  moduleFileExtensions: ['js', 'ts', 'svelte'],
+  modulePathIgnorePatterns: ['build', 'public'],
   testEnvironment: 'jsdom',
   globals: {
     window: {},
-    "ts-jest": {
+    'ts-jest': {
       babelConfig: true,
-      tsconfig: "tsconfig.json",
+      tsconfig: 'tsconfig.json',
     },
   },
 };

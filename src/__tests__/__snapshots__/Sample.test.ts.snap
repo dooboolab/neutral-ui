@@ -31,10 +31,10 @@ Object {
       "props": Object {},
       "root": <div>
         <main
-          class="svelte-1pbldhu"
+          class="svelte-1vjiscf"
         >
           <h1
-            class="svelte-1pbldhu"
+            class="svelte-1vjiscf"
           >
             dooboo-ui-svelte
           </h1>
@@ -43,14 +43,15 @@ Object {
       "skip_bound": false,
       "update": [Function],
     },
+    "$capture_state": [Function],
   },
   "container": <body>
     <div>
       <main
-        class="svelte-1pbldhu"
+        class="svelte-1vjiscf"
       >
         <h1
-          class="svelte-1pbldhu"
+          class="svelte-1vjiscf"
         >
           dooboo-ui-svelte
         </h1>
