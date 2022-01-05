@@ -1,10 +1,10 @@
 <script>
     import {Meta, Template, Story} from "@storybook/addon-svelte-csf";
-    import ToggleSwitch from "./ToggleSwitch.svelte";
+    import ToggleSwitch from "../ToggleSwitch.svelte";
   </script>
   
   <Meta
-    title="Example/ToogleSwitch"
+    title="ToogleSwitch"
     component={ToggleSwitch}
     argTypes={{
         checked: {control: 'boolean'},

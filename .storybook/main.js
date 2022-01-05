@@ -1,8 +1,8 @@
 module.exports = {
   core: { builder: "storybook-builder-vite" },
   stories: [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx|svelte)",
+    // "../src/**/*.stories.mdx",
+    "../src/components/ToggleSwtich/stories/index.svelte",
   ],
   staticDirs: ["../public"],
   addons: [
