@@ -56,20 +56,12 @@
   // eslint-disable-next-line
   let style = backgroundColor ? `background-color: ${backgroundColor}` : '';
 
-  const dispatch = createEventDispatcher();
-
-  /**
-   * Optional click handler
-   */
-  function onClick(event) {
-    dispatch('click', event);
-  }
 </script>
 
 <button
   type="button"
   class={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
   {style}
-  on:click={onClick}>
+  on:click>
   {label}
 </button>

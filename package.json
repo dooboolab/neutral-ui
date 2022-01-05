@@ -42,6 +42,7 @@
     "@testing-library/svelte": "^3.0.3",
     "@tsconfig/svelte": "^3.0.0",
     "@types/jest": "^27.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "babel-jest": "^27.4.5",
     "babel-loader": "^8.2.3",
