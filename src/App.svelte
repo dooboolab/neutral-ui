@@ -10,21 +10,7 @@
 </style>
 
 <script lang="ts">
-  import {getContext} from 'svelte';
-
-  import {ThemeProvider, type ThemeStore} from 'svelte-theme';
-
-  const {changeThemeType} = getContext<ThemeStore>('svelte-theme');
-
-  const toggleTheme = () => {
-    document.addEventListener('keydown', (event) => {
-      if (event.ctrlKey && event.key === '.') {
-        changeThemeType();
-      }
-    });
-  };
-
-  toggleTheme();
+  import {ThemeProvider} from 'svelte-theme';
 </script>
 
 <main>
