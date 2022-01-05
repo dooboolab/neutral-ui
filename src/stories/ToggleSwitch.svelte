@@ -1,9 +1,9 @@
 <style lang="postcss" bind:styles={styles}>
-    .switch {
+    .toggle-switch {
       position: relative;
       display: inline-block;
-      width: 60px;
-      height: 30px;
+      width: var(--width);
+      height: var(--height);
 
       input {
         opacity: 0;
@@ -24,10 +24,10 @@
         &::before {
           position: absolute;
           content: '';
-          height: 23px;
-          width: 23px;
-          left: 6px;
-          bottom: 3px;
+          height: var(--roundDiameter);
+          width: var(--roundDiameter);
+          left: var(--left);
+          bottom: var(--bottom);
           -webkit-transition: 0.4s;
           transition: 0.4s;
         }
@@ -47,9 +47,9 @@
         background-color: var(--backgroundColorOn);
 
         &::before {
-          -webkit-transform: translateX(26px);
-          -ms-transform: translateX(26px);
-          transform: translateX(26px);
+          -webkit-transform: var(--transformX);
+          -ms-transform: var(--transformX);
+          transform: var(--transformX);
         }
       }
 
@@ -66,20 +66,51 @@
     type Size = 'large' | 'medium' | 'small';
 
     export let checked = false;
+    export let size: Size = 'medium';
     export let circleColorOff = '#fff';
     export let circleColorOn = '#fff';
     export let backgroundColorOff = '#A9A9A9';
     export let backgroundColorOn = '#A3DA8D';
-    export let size: Size = 'medium';
 
+    let width = 60;
+    let height = 30;
+    let left = 6;
+    let bottom = 3;
+    let roundDiameter = 24;
+    let transformX= 24;
 
+    $: if(size === 'large') {
+        width = 90;
+        height = 45;
+        left = 12;
+        bottom = 6;
+        roundDiameter = height - (bottom * 2);
+        transformX = width - ((Math.round(roundDiameter/2) + left) * 2);
+      }
+
+    $: if(size === 'small') {
+        width = 30;
+        height = 15;
+        left = 3;
+        bottom = 2;
+        roundDiameter = height - (bottom * 2);
+        transformX = width - ((Math.round(roundDiameter/2) + left) * 2);
+      }
   </script>
   
-  <label class="switch">
-    <input type="checkbox" bind:checked />
+  <label class="toggle-switch" style="--width: {width}px; --height: {height}px">
+    <input type="checkbox" bind:checked on:click/>
     <span 
-      class="slider round" 
-      style="--circleColorOff: {circleColorOff}; --circleColorOn: {circleColorOn}; --backgroundColorOff: {backgroundColorOff}; --backgroundColorOn: {backgroundColorOn}" 
+      class="slider round"
+      style="
+      --roundDiameter: {roundDiameter}px;
+      --left: {left}px;
+      --bottom: {bottom}px;
+      --transformX: translateX({transformX}px);
+      --circleColorOff: {circleColorOff}; 
+      --circleColorOn: {circleColorOn}; 
+      --backgroundColorOff: {backgroundColorOff};
+      --backgroundColorOn: {backgroundColorOn}" 
     />
   </label>
   
