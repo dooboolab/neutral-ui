@@ -1,13 +1,13 @@
 module.exports = {
-  core: { builder: "storybook-builder-vite" },
+  core: {builder: 'storybook-builder-vite'},
   stories: [
-    "../src/**/*.stories.mdx",
-    "../src/components/**/*.+(js|ts|svelte)",
+    '../src/**/*.stories.mdx',
+    '../src/components/**/stories/*.stories.@(js|ts|svelte)',
   ],
-  staticDirs: ["../public"],
+  staticDirs: ['../public'],
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-svelte-csf",
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-svelte-csf',
   ],
 };
