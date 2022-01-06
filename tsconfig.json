@@ -2,6 +2,7 @@
   "extends": "@tsconfig/svelte/tsconfig.json",
   "include": [
     "src/**/*",
+    "types/**/*",
     "babel.config.js",
     "svelte.config.js",
     "postcss.config.js",

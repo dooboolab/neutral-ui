@@ -1,66 +1,143 @@
 <style lang="postcss">
-  .storybook-button {
-    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    border: 0;
-    border-radius: 3em;
+  button {
+    background-color: var(--color);
+    color: black;
+    border-radius: 4px;
+    border: none;
     cursor: pointer;
-    display: inline-block;
-    line-height: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
-  .storybook-button--primary {
+
+  .white-text {
     color: white;
-    background-color: #1ea7fd;
   }
-  .storybook-button--secondary {
-    color: #333;
-    background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+
+  .outlined {
+    background-color: white;
+    color: var(--color);
+    border: 1px solid var(--color);
   }
-  .storybook-button--small {
-    font-size: 12px;
-    padding: 10px 16px;
+
+  .small {
+    padding: 8px;
+    font-size: 0.8rem;
   }
-  .storybook-button--medium {
-    font-size: 14px;
-    padding: 11px 20px;
+
+  .medium {
+    padding: 12px;
+    font-size: 0.9rem;
   }
-  .storybook-button--large {
-    font-size: 16px;
-    padding: 12px 24px;
+
+  .large {
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .primary {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  .secondary {
+    background-color: var(--secondary);
+    color: black;
+  }
+
+  .success {
+    background-color: var(--success);
+    color: black;
+  }
+
+  .danger {
+    background-color: var(--danger);
+    color: white;
+  }
+
+  .warning {
+    background-color: var(--warning);
+    color: black;
+  }
+
+  .info {
+    background-color: var(--info);
+    color: white;
+  }
+
+  .light {
+    background-color: var(--light);
+    color: black;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+  }
+
+  .loader {
+    border: 2px solid var(--background);
+    border-top: 2px solid gray;
+    border-radius: 50%;
+    padding: 8px;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 </style>
 
-<script>
-  import {createEventDispatcher} from 'svelte';
-  /**
-   * Is this the principal call to action on the page?
-   */
-  export let primary = false;
-  /**
-   * What background color to use
-   */
-  export let backgroundColor;
-  /**
-   * How large should the button be?
-   */
-  export let size = 'medium';
-  /**
-   * Button contents
-   */
-  export let label = '';
-  let mode = primary
-    ? 'storybook-button--primary'
-    : 'storybook-button--secondary';
-  // eslint-disable-next-line
-  let style = backgroundColor ? `background-color: ${backgroundColor}` : '';
+<script lang="ts">
+  import {getContext} from 'svelte';
+  import {type ThemeStore} from 'svelte-theme';
+  import type {Colors} from '../../../types';
+
+  export let color: Colors = 'light';
+  export let size: 'small' | 'medium' | 'large' = 'medium';
+  export let type: 'submit' | undefined = undefined;
+  export let style = '';
+  export let disabled = false;
+  export let loading = false;
+  export let outlined = false;
+
+  const getTheColorCode = () => {
+    const {theme} = getContext<ThemeStore>('svelte-theme');
+
+    return theme[color] || theme['light'];
+  };
+
+  const shouldWhiteText =
+    color === 'danger' || color === 'primary' || color === 'info';
+
+  const colorCode = getTheColorCode();
 </script>
 
 <button
-  type="button"
-  class={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-  style={style}
+  class:small={size === 'small'}
+  class:medium={size === 'medium'}
+  class:large={size === 'large'}
+  class:white-text={shouldWhiteText}
+  class:outlined
+  class={$$props.class}
+  type={type}
+  style={`--color: ${colorCode}; ${style}`}
+  disabled={disabled}
   on:click
 >
-  {label}
+  {#if loading}
+    <div class="loader" />
+  {/if}
+  <slot />
 </button>

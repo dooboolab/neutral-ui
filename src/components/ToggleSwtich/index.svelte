@@ -1,3 +1,3 @@
 <script lang="ts" context="module">
-    export * from './ToggleSwitch.svelte';
+  export * from './ToggleSwitch.svelte';
 </script>

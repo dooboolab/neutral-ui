@@ -38,6 +38,11 @@ Object {
           >
             dooboo-ui-svelte
           </h1>
+           
+          <button
+            class="svelte-11l1yp9"
+            style=""
+          />
         </main>
       </div>,
       "skip_bound": false,
@@ -55,6 +60,11 @@ Object {
         >
           dooboo-ui-svelte
         </h1>
+         
+        <button
+          class="svelte-11l1yp9"
+          style=""
+        />
       </main>
     </div>
   </body>,

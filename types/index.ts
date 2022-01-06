@@ -1,0 +1,17 @@
+export type Colors =
+    | 'primary'
+    | 'primaryLight'
+    | 'secondary'
+    | 'success'
+    | 'danger'
+    | 'warning'
+    | 'info'
+    | 'brand'
+    | 'dusk'
+    | 'red'
+    | 'orange'
+    | 'yellow'
+    | 'green'
+    | 'blue'
+    | 'purple'
+    | 'light';

@@ -1,52 +1,87 @@
 <script>
   import {Meta, Template, Story} from '@storybook/addon-svelte-csf';
+  import {ThemeProvider} from 'svelte-theme';
   import Button from '../index';
 </script>
 
 <Meta
-  title="Example/Button"
+  title="Button"
   component={Button}
   argTypes={{
-    label: {control: 'text'},
-    primary: {control: 'boolean'},
-    backgroundColor: {control: 'color'},
+    color: {control: 'text'},
     size: {
-      control: {type: 'select', options: ['small', 'medium', 'large']},
+      control: {type: 'select'},
+      options: ['small', 'medium', 'large'],
     },
+    outlined: {control: 'boolean'},
+    disabled: {control: 'boolean'},
+    loading: {control: 'boolean'},
     onClick: {action: 'onClick'},
   }}
 />
 
 <Template let:args>
-  <Button {...args} on:click={args.onClick} />
+  <ThemeProvider>
+    <Button {...args} on:click={args.onClick}>Button</Button>
+  </ThemeProvider>
 </Template>
+
+<Story name="Default Button" />
+
+<Story
+  name="Loading Button"
+  args={{
+    loading: true,
+  }}
+/>
+
+<Story
+  name="Outlined Button"
+  args={{
+    color: 'primary',
+    outlined: true,
+  }}
+/>
 
 <Story
   name="Primary"
   args={{
     primary: true,
-    label: 'Button',
+    color: 'primary',
   }}
 />
 
 <Story
   name="Secondary"
   args={{
-    label: 'Button',
-  }}
-/>
-<Story
-  name="Large"
-  args={{
-    size: 'large',
-    label: 'Button',
+    color: 'secondary',
   }}
 />
 
 <Story
-  name="Small"
+  name="Success"
   args={{
-    size: 'small',
-    label: 'Button',
+    color: 'success',
+  }}
+/>
+
+<Story
+  name="Danger"
+  args={{
+    color: 'danger',
+  }}
+/>
+
+<Story
+  name="Info"
+  args={{
+    color: 'info',
+  }}
+/>
+
+<Story
+  name="Light"
+  args={{
+    color: 'light',
   }}
 />
