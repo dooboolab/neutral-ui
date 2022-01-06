@@ -11,10 +11,10 @@
         size: {control: {type: 'select', options: ['large', 'medium', 'small']}},
         onClick: {action: "onClick"},
         checked: {control: 'boolean'},
-        circleColorOff: {control: 'color'},
-        circleColorOn: {control: 'color'},
-        backgroundColorOn: {control: 'color'},
-        backgroundColorOff: {control: 'color'}
+        circleColorOff: {control: 'color', defaultValue: '#fff'},
+        circleColorOn: {control: 'color', defaultValue: '#fff'},
+        backgroundColorOn: {control: 'color', defaultValue: '#A3DA8D'},
+        backgroundColorOff: {control: 'color', defaultValue: '#A9A9A9'}
     }}
   />
   
