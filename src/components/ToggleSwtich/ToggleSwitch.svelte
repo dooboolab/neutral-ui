@@ -63,7 +63,7 @@
   </style>
   
   <script lang="ts">
-    type Size = 'large' | 'medium' | 'small';
+    import type { Size } from "utils/types.svelte";
 
     export let checked = false;
     export let size: Size = 'medium';
