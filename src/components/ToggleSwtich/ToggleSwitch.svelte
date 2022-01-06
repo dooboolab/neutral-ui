@@ -1,4 +1,4 @@
-<style lang="postcss" bind:styles={styles}>
+<style lang="postcss">
     .toggle-switch {
       position: relative;
       display: inline-block;
@@ -64,13 +64,17 @@
   
   <script lang="ts">
     import type { Size } from "utils/types.svelte";
+    import type { Styles } from "./index.types";
 
     export let checked = false;
     export let size: Size = 'medium';
-    export let circleColorOff = '#fff';
-    export let circleColorOn = '#fff';
-    export let backgroundColorOff = '#A9A9A9';
-    export let backgroundColorOn = '#A3DA8D';
+
+    export let styles: Styles = {
+      circleColorOff: '#fff',
+      circleColorOn: '#fff',
+      backgroundColorOff: '#A9A9A9',
+      backgroundColorOn: '#A3DA8D',
+    }
 
     let width = 60;
     let height = 30;
@@ -79,7 +83,7 @@
     let roundDiameter = 24;
     let transformX= 24;
 
-    $: if(size === 'large') {
+    if(size === 'large') {
         width = 90;
         height = 45;
         left = 12;
@@ -88,7 +92,7 @@
         transformX = width - ((Math.round(roundDiameter/2) + left) * 2);
       }
 
-    $: if(size === 'small') {
+    if(size === 'small') {
         width = 30;
         height = 15;
         left = 3;
@@ -107,10 +111,10 @@
       --left: {left}px;
       --bottom: {bottom}px;
       --transformX: translateX({transformX}px);
-      --circleColorOff: {circleColorOff}; 
-      --circleColorOn: {circleColorOn}; 
-      --backgroundColorOff: {backgroundColorOff};
-      --backgroundColorOn: {backgroundColorOn}" 
+      --circleColorOff: {styles.circleColorOff}; 
+      --circleColorOn: {styles.circleColorOn}; 
+      --backgroundColorOff: {styles.backgroundColorOff};
+      --backgroundColorOn: {styles.backgroundColorOn}" 
     />
   </label>
   

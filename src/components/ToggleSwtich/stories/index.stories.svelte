@@ -16,13 +16,19 @@
         backgroundColorOn: {control: 'color'},
         backgroundColorOff: {control: 'color'}
     }}
-
   />
   
   <Template let:args >
     <ToggleSwitch
-      on:click={args.onClick}
       {...args}
+      on:click={args.onClick}
+      styles={{
+        circleColorOff: args.circleColorOff,
+        circleColorOn: args.circleColorOn,
+        backgroundColorOn: args.backgroundColorOn,
+        backgroundColorOff: args.backgroundColorOff,
+      }}
+      
     />
   </Template>
   
