@@ -4,7 +4,7 @@
   </script>
   
   <Meta
-    title="ToogleSwitch"
+    title="Components/ToggleSwitch"
     component={ToggleSwitch}
     argTypes={{
         checked: {control: 'boolean'},
@@ -33,6 +33,7 @@
   </Template>
   
   <Story
+    id="main"
     name="ToggleSwitch"
     args={{
         checked: false,
