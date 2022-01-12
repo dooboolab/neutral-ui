@@ -63,7 +63,7 @@
   </style>
   
   <script lang="ts">
-    import type { Size } from "utils/types.svelte";
+    import type { Size } from "types";
     import type { Styles } from "./index.types";
 
     export let checked = false;
