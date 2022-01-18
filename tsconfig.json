@@ -28,6 +28,7 @@
     "noEmitHelpers": true,
     "noImplicitReturns": true,
     "noUnusedLocals": false,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "types": ["svelte"]
   }
 }

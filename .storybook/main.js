@@ -2,7 +2,7 @@ module.exports = {
   core: { builder: "storybook-builder-vite" },
   stories: [
     "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx|svelte)",
+    '../src/components/**/stories/*.stories.@(js|ts|svelte)',
   ],
   staticDirs: ["../public"],
   addons: [
