@@ -1,0 +1,34 @@
+{
+  "name": "lit-storybook",
+  "version": "0.0.1",
+  "description": "lit web component with storybook",
+  "author": "dean",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "build": "tsc && npm run analyze -- --exclude dist",
+    "prepublish": "tsc && npm run analyze -- --exclude dist",
+    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
+    "storybook": "tsc && npm run analyze -- --exclude dist && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
+    "storybook:build": "tsc && npm run analyze -- --exclude dist && build-storybook"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.5.7",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "@web/dev-server": "^0.1.30",
+    "@web/dev-server-storybook": "^0.4.3",
+    "@web/test-runner": "^0.13.27",
+    "concurrently": "^7.0.0",
+    "eslint": "^8.11.0",
+    "prettier": "^2.6.0",
+    "prettier-eslint": "^13.0.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "lit": "^2.2.1"
+  },
+  "customElements": "custom-elements.json"
+}

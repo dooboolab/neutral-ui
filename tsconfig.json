@@ -1,0 +1,32 @@
+{
+  "include": ["**/*.ts", ".eslintrc.js", ".prettierrc.js"],
+  "exclude": ["node_modules/*", "dist"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": ["DOM", "ES2017", "WebWorker"],
+    "esModuleInterop": true,
+    "composite": true,
+    "importsNotUsedAsValues": "remove",
+    "strict": true,
+    "moduleResolution": "node",
+    "target": "es2018",
+    "useDefineForClassFields": false,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "noEmitHelpers": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noEmitOnError": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "rootDir": "./",
+    "declaration": true,
+    "incremental": true
+  }
+}

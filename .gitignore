@@ -1,15 +1,16 @@
-/node_modules/
-/public
-/build
-
+## system files
 .DS_Store
-build-storybook.log
 
-# For yarn berry
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+## npm
+/node_modules/
+
+## testing
+/coverage/
+
+## temp folders
+/.tmp/
+
+# build
+/dist/
+
+storybook-static
