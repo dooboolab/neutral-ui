@@ -16,9 +16,10 @@ export class NeutralButton extends LitElement {
         background-color: var(--button-color, #000);
         color: var(--text-color, #fff);
         border: 1px solid var(--border-color, #000);
-        width: 6em;
+        min-width: 6em;
         height: 3em;
         border-radius: 2em;
+        padding: 1em 1.5em;
         cursor: pointer;
 
         display: flex;
@@ -87,11 +88,59 @@ export class NeutralButton extends LitElement {
         border: none;
       }
 
-      /* :host(.outlined) button {
+      :host(.outlined) button {
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--black);
+      }
+
+      :host(.outlined.primary) button {
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--primary);
+      }
+
+      :host(.outlined.secondary) button {
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--secondary);
+      }
+
+      :host(.outlined.success) button {
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--success);
+      }
+
+      :host(.outlined.danger) button {
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--danger);
+      }
+
+      :host(.outlined.warning) button {
         background-color: var(--white);
         color: var(--black);
         border: 1px solid var(--warning);
-      } */
+      }
+
+      :host(.outlined.info) button {
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--info);
+      }
+
+      :host(.outlined.light) button {
+        background-color: var(--white);
+        color: var(--black);
+        border: 1px solid var(--light);
+      }
+
+      :host(.outlined.disabled) button {
+        background-color: var(--white);
+        color: var(--disabled);
+        border: 1px solid var(--disabled);
+      }
 
       .loader {
         border: 2px solid var(--background-color, #fff);
