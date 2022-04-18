@@ -28,5 +28,6 @@
     "rootDir": "./",
     "declaration": true,
     "incremental": true
-  }
+  },
+  "files": ["environment.d.ts"]
 }

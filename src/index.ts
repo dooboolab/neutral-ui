@@ -1,1 +1,1 @@
-export * from './main/my-element';
+export * from './main/neutral-button';

@@ -4,6 +4,63 @@
   "modules": [
     {
       "kind": "javascript-module",
+      "path": "environment.d.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "content"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "content",
+            "module": "environment.d.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "content",
+            "module": "environment.d.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "content",
+            "module": "environment.d.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/colors.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "colors",
+          "default": "css`\n  :host {\n    --black: #000;\n    --white: #fff;\n    --charcoalGray: #414141;\n    --gray: #6d6d6d;\n    --cloud: #c4c4c4;\n    --lightGray: #ededed;\n    --brightTurquoise: #00d9d5;\n    --ruddy: #ff002e;\n    --yellow: #ffeb14;\n    --blueberry: #5398ff;\n    --harlequin: #33ff2f;\n    --apple: #151e22;\n    --google: #e04238;\n    --facebook: #345997;\n    --negative: #ff7676;\n    --positive: #00ba90;\n    --primary: var(--black);\n    --paper: var(--lightGray);\n    --disabled: var(--cloud);\n    --background: var(--white);\n    --secondary: var(--brightTurquoise);\n    --danger: var(--ruddy);\n    --warning: var(--yellow);\n    --light: var(--lightGray);\n    --info: var(--blueberry);\n    --success: var(--harlequin);\n    --textPrimary: var(--black);\n    --text: var(--black);\n    --placeholder: var(--gray);\n    --textDisabled: var(--charcoalGray);\n    --textContrast: var(--white);\n    --textValidation: var(--ruddy);\n  }\n`"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "colors",
+          "declaration": {
+            "name": "colors",
+            "module": "src/colors.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/index.ts",
       "declarations": [],
       "exports": [
@@ -12,7 +69,7 @@
           "name": "*",
           "declaration": {
             "name": "*",
-            "package": "./main/my-element"
+            "package": "./main/neutral-button"
           }
         }
       ]
@@ -22,8 +79,13 @@
       "path": "stories/index.stories.ts",
       "declarations": [
         {
-          "kind": "variable",
-          "name": "Regular"
+          "kind": "function",
+          "name": "Button",
+          "parameters": [
+            {
+              "name": "args"
+            }
+          ]
         }
       ],
       "exports": [
@@ -36,9 +98,9 @@
         },
         {
           "kind": "js",
-          "name": "Regular",
+          "name": "Button",
           "declaration": {
-            "name": "Regular",
+            "name": "Button",
             "module": "stories/index.stories.ts"
           }
         }
@@ -46,7 +108,476 @@
     },
     {
       "kind": "javascript-module",
+      "path": "storybook-static/0d63a3bc.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/12c1cbb8.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/20d9597f.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "t",
+          "default": "this"
+        },
+        {
+          "kind": "variable",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "e"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "c"
+            },
+            {
+              "name": "l"
+            },
+            {
+              "name": "p"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "e"
+            },
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "e"
+            },
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "e"
+            },
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            },
+            {
+              "name": "a"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t"
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            },
+            {
+              "name": "a"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            },
+            {
+              "name": "a"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "e",
+          "declaration": {
+            "name": "t",
+            "module": "storybook-static/20d9597f.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "e",
+          "declaration": {
+            "name": "t",
+            "module": "storybook-static/20d9597f.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/2247c7d3.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/37e0cec0.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/38e306fb.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
       "path": "storybook-static/44682196.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/519d5981.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/52a0187e.js",
       "declarations": [],
       "exports": []
     },
@@ -182,56 +713,595 @@
     },
     {
       "kind": "javascript-module",
-      "path": "src/main/my-element.ts",
+      "path": "storybook-static/64fdd373.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/66c31eb8.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "t",
+          "default": "this"
+        },
+        {
+          "kind": "variable",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "e"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "c"
+            },
+            {
+              "name": "l"
+            },
+            {
+              "name": "p"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "e"
+            },
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "e"
+            },
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "e"
+            },
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            },
+            {
+              "name": "a"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t"
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "e"
+        },
+        {
+          "kind": "function",
+          "name": "t",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            },
+            {
+              "name": "a"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            },
+            {
+              "name": "o"
+            },
+            {
+              "name": "a"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "t"
+            },
+            {
+              "name": "r"
+            },
+            {
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "e",
+          "parameters": [
+            {
+              "name": "e"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "e",
+          "declaration": {
+            "name": "t",
+            "module": "storybook-static/66c31eb8.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "e",
+          "declaration": {
+            "name": "t",
+            "module": "storybook-static/66c31eb8.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/71cfa89a.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/7e288d03.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/8477bf63.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/95fc559a.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/c5da469a.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/d826e249.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/dd293ddb.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/e9d1f214.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/ee6a5cb3.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/f4b8039f.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/f90599e3.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "storybook-static/fdf5ca73.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/main/neutral-button.ts",
       "declarations": [
         {
           "kind": "class",
           "description": "",
-          "name": "MyElement",
+          "name": "NeutralButton",
           "members": [
             {
               "kind": "field",
-              "name": "child",
+              "name": "loading",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "loading"
+            },
+            {
+              "kind": "field",
+              "name": "size",
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "attribute": "child"
+              "default": "'small'",
+              "attribute": "size"
+            },
+            {
+              "kind": "field",
+              "name": "outlined",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "outlined"
             }
           ],
           "attributes": [
             {
-              "name": "child",
+              "name": "loading",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "loading"
+            },
+            {
+              "name": "size",
               "type": {
                 "text": "string"
               },
-              "default": "''",
-              "fieldName": "child"
+              "default": "'small'",
+              "fieldName": "size"
+            },
+            {
+              "name": "outlined",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "outlined"
             }
           ],
           "superclass": {
             "name": "LitElement",
             "package": "lit"
           },
-          "tagName": "my-element",
+          "tagName": "neutral-button",
           "customElement": true
         }
       ],
       "exports": [
         {
           "kind": "js",
-          "name": "MyElement",
+          "name": "NeutralButton",
           "declaration": {
-            "name": "MyElement",
-            "module": "src/main/my-element.ts"
+            "name": "NeutralButton",
+            "module": "src/main/neutral-button.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "my-element",
+          "name": "neutral-button",
           "declaration": {
-            "name": "MyElement",
-            "module": "src/main/my-element.ts"
+            "name": "NeutralButton",
+            "module": "src/main/neutral-button.ts"
           }
         }
       ]
